@@ -13,7 +13,7 @@ function start()
     recognition.start();
  
 }
-recognition.onResult=function(event){
+recognition.onresult=function(event){
     console.log(event);
 
     var content=event.results[0][0].transcript;
@@ -54,7 +54,7 @@ function draw()
     {
         height=Math.floor(Math.random()*100);
         width=Math.floor(Math.random()*100);
-        rectangle(x,y,height,width);
+        rect(x,y,height,width);
         rectangle_1="";
         
     }
